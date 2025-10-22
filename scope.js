@@ -12,6 +12,8 @@ const output = document.getElementById("output");
 // 🧩 STEP 1: GLOBAL SCOPE
 // Goal: Declare a global variable and use it inside a function.
 function globalScopeDemo() {
+  let name = "SCOPE lesson";
+  console.log(name);
   // Example: let message = "I am global!";
   // console.log() inside and outside a function
   // Observe which logs work.
