@@ -8,7 +8,7 @@ const scoreInput = document.getElementById("scoreInput");
 function addParagraph() {
   let para = document.createElement("p");
   para.innerHTML = "add new paragraph";
-  para.id - "mypara";
+  para.id = "mypara";
   container.appendChild(para);
   // create and append a <p>
 }
@@ -16,17 +16,17 @@ function addParagraph() {
 // STEP 2: Update Paragraph
 function updateParagraph() {
   let para = document.getElementById("mypara");
-  para.innerHTML = "add new paragraph from updateParagraph";
+  para.innerHTML = "this is from update function";
   // find <p> and update text
 }
 
 // STEP 3: Style Paragraph
 function styleParagraph() {
   let para = document.getElementById("mypara");
-  para.style.color = "red";
+  //para.style.color = "red";
 
   // change color / background / font
-  //para.classList.add("passed");
+  para.classList.add("passed");
 }
 
 // STEP 4: Check Score from textbox
@@ -38,7 +38,7 @@ function checkScore() {
   //    else → Failed (red)
   // 5. Append to container
   // 6. Optionally clear textbox
-  let score = document.querySelector("#scoreInput").value;
+  let score = Number(document.querySelector("#scoreInput").value);
   console.log(score);
 
   let result = document.getElementById("studentResult");

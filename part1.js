@@ -57,6 +57,11 @@ document.body.appendChild(para);
 
 
 // 🧩 STEP 8: Change entire page background or add a new heading
+document.body.style.backgroundColor = "grey";
+
+let header1 = document.createElement("h1");
+header1.innerHTML = "This is the new header I made";
+document.body.appendChild(header1);
 
 
 

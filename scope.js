@@ -8,12 +8,14 @@
 // ---------------------------------------------
 
 const output = document.getElementById("output");
+let training = "Software bootcamp";
 
 // 🧩 STEP 1: GLOBAL SCOPE
 // Goal: Declare a global variable and use it inside a function.
 function globalScopeDemo() {
   let name = "SCOPE lesson";
   console.log(name);
+  console.log(training);
   // Example: let message = "I am global!";
   // console.log() inside and outside a function
   // Observe which logs work.
@@ -34,6 +36,13 @@ function localScopeDemo() {
 // 🧩 STEP 3: BLOCK SCOPE
 // Goal: Show that let/const are block scoped and var is not.
 function blockScopeDemo() {
+  let score = 95;
+  let grade = ``;
+  if (score > 80);
+  {
+    grade = `A`;
+    var status = `pass`;
+  }
   // Example: inside if(true){ let inside = "Block var"; }
   // console.log(inside) outside block → ReferenceError
 }

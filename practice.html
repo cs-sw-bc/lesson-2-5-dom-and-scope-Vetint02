@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+      /*background: linear-gradient(135deg, #eef2f3, #dfe9f3);*/
       padding: 40px;
       text-align: center;
     }
@@ -67,7 +67,7 @@
 
   <!-- 🧮 Score input and button -->
   <div style="margin-top:20px;">
-    <input id="scoreInput" type="number" placeholder="Enter score (0-100)"/>
+    <input id="scoreInput" onchange = "checkScore()" type="number" placeholder="Enter score (0-100)"/>
     <button class="btn" onclick="checkScore()">🧮 Check Score</button>
   </div>
 
@@ -83,7 +83,7 @@
     🪄 Built for Lesson 5 – Event-Driven DOM Manipulation
   </footer>
   <!--scripts-->
-  <script src="part1.js"></script>
+  <!--<script src="part1.js"></script>-->
   <script src="part2.js"></script>
   <script src="scope.js"></script>
 
